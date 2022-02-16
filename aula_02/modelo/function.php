@@ -9,6 +9,7 @@
             "mensagem" => 'Existe(m) campo(s) a ser(em) preenchido(s).'
         );
     }else{
+
         switch($ANIMAL){
             case '1': $dados = array(
                 "tipo" => 'cachorro',
@@ -26,6 +27,7 @@
             );
             break;
         }
+
     }
 
-    echo json_decode($dados);
+    echo json_encode($dados);
