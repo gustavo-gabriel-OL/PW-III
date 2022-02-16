@@ -23,7 +23,7 @@
             break;
             case '3': $dados = array(
                 "tipo" => 'peixe',
-                "mensagem" => 'Seja bem  vido, '.$NOME.' , sabemos que o seu animal de preferência é o peixe'
+                "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é o peixe'
             );
             break;
         }
