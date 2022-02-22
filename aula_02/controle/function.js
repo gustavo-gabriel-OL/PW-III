@@ -7,7 +7,7 @@ $(document).ready(function(){
         //coletar o que foi escrito e selecionado em nosso formulário
         let dados = $('#form').serialize()
 
-        console.log(dado)
+        console.log(dados)
     })
 
 })
