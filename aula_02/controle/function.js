@@ -4,7 +4,10 @@ $(document).ready(function(){
     $('.btn-send').click(function(e){
         e.preventDefault()
 
-        alert("Você clicou no botão enviar!!")
+        //coletar o que foi escrito e selecionado em nosso formulário
+        let dados = $('#form').serialize()
+
+        console.log(dado)
     })
 
 })
