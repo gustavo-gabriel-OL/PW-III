@@ -26,6 +26,36 @@
                 "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é o peixe'
             );
             break;
+            case '4': $dados = array(
+                "tipo" => 'leão.jpg',
+                "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é o leão'
+            );
+            break;
+            case '5': $dados = array(
+                "tipo" => 'foca.jpg',
+                "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é a foca'
+            );
+            break;
+            case '6': $dados = array(
+                "tipo" => 'leopardo.jpeg',
+                "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é o leopardo'
+            );
+            break;
+            case '7': $dados = array(
+                "tipo" => 'Elefante.jpg',
+                "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é o elefante'
+            );
+            break;
+            case '8': $dados = array(
+                "tipo" => 'urso.jpg',
+                "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é o urso'
+            );
+            break;
+            case '9': $dados = array(
+                "tipo" => 'harpia.jpg',
+                "mensagem" => 'Seja bem  vindo, '.$NOME.' , sabemos que o seu animal de preferência é a harpia'
+            );
+            break;
         }
 
     }
