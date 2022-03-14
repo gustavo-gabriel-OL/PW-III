@@ -9,40 +9,52 @@
     <title>Formulário</title>
 </head>
 
+<!DOCTYPE html>
+
+<head>
+    <title>VIEW</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
 <body>
+
+    <h1 class="text-center">Olá, me diga a sua bebida que você mais gosta!</h1>
+
     <div class="container">
         <div class="row justify-content-center">
-            <div class=" col-12 col-sm-8 col-md-6">
-                <div class="alert-danger shadow">
-                    <h1 class=" text-center text-white">
-                        Formulário de bebidas
-                    </h1>
-                </div>
+            <div class="col-12 col-sm-6 col-md-4">
                 <form id="form">
                     <div class="form-group mt-5">
-                        <label for="NOME">Digite seu o seu nome:</label>
-                        <input name="NOME" type="text" class="form-control" id="NOME">
+                        <label>Digite seu nome</label>
+                        <input type="text" name="NOME" id="NOME" class="form-control">
                     </div>
-                    <div class="form-group mt-5">
-                        <label for="DATA">Digite sua data de nascimento:</label>
-                        <input name="DATA" type="date" class="form-control" id="DATA">
+                    <div class="form-group">
+                        <label>Insira a sua bebida favorita</label>
+                        <input type="text" name="BEBIDA" id="BEBIDA" class="form-control">
                     </div>
-                    <div class="form-group mt-5">
-                        <label for="BEBIDA">Digite qual a sua bebida Favorita:</label>
-                        <input name="BEBIDA" type="text" class="form-control" id="BEBIDA">
+
+                    <div class="form-group">
+                        <label>Insira a sua data de nascimento</label>
+                        <input type="date" name="ANO" id="ANO" class="form-control">
                     </div>
-                    <div class="form-group row mt-3 justify-content-center">
+
+                    <div class="form-group row justify-content-end">
                         <div class="col-12 col-sm-8 col-md-6">
-                            <button class="btn btn-danger btn-block btn-send">Enviar</button>
+                            <button class="btn btn-success btn-block btn-send">Enviar</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
+        <div id="retorno">
 
-        <div id="retorno" class="row justify-content-center">
-            
         </div>
+
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
