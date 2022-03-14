@@ -1,35 +1,28 @@
 <?php
 
-$NOME = $_REQUEST['NOME'];
-$DATA = $_REQUEST['DATA'];
-$BEBIDA = $_REQUEST['BEBIDA'];
+    $NOME = $_REQUEST['NOME'];
+    $DATA = $_REQUEST['DATA'];
+    $BEBIDA = $_REQUEST['BEBIDA'];
 
-    $DATA = date(d/m/Y);
+    $IDADE = 2022 - ("Y", $DATA);
 
-    $idade = 2022 - date(Y) ;
-
-if(empty($NOME)){
-    $dados = array(
-        "tipo" => 'error',
-        "mensagem" => 'Existe(m) campo(s) obrigatorio(s) não preenchido(s)'
-
-    );
-} 
-else {
-    $DATA
-    switch ($idade < 18){
-        case $idade < 18 : 
-            $dados = array(
-            "tipo" => 'menor.png',
-            "mensagem" => 'Olá '.$NOME.', você tem '.$idade.' , e sabemos que sua bebida favorito é '.$BEBIDA.
-            );
-        }else{ 
-            $dados = array(
-                "tipo" => 'menor.png',
-                "mensagem" => 'Olá '.$NOME.', você tem '.$idade.' , e sabemos que sua bebida favorito é '.$BEBIDA.
-            );
-        break;
+    if(empty($NOME)){
+        $dados = array(
+            "tipo" => "error", 
+            "mensagem" => "Existe(m) campo(s) obrigatório(s) não preenchido(s)."
+        );
     }
-}
+    else{
+        if($IDADE <= 17){ $dados=array(
+            "tipo" => "menor.png",
+            "mensagem" => "Você é menor de idade meu/minha consagrado(a), você NÃO pode beber bebidas alcoólicas S! Pois você tem só " .$IDADE. " anos."
+        );
+        }
+        else { $dados=array(
+            "tipo" => "maior.png",
+            "mensagem" => "Pode beber meu/minha consagrado(a), você é maior de idade, além do mais, você tem " .$IDADE. " anos."
+        );
+        }
+    }
 
-echo json_encode($dados);
+    echo json_encode($dados);
