@@ -17,7 +17,7 @@ if(empty($NOME)){
 } 
 else {
     $DATA
-    if($idade < 18){
+    switch ($idade < 18){
         case $idade < 18 : 
             $dados = array(
             "tipo" => 'menor.png',
