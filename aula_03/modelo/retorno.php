@@ -4,7 +4,7 @@ $NOME = $_REQUEST['NOME'];
 $BEBIDA = $_REQUEST['BEBIDA'];
 $NASC = $_REQUEST['ANO'];
 $DataAtual = date("Y-m-d");
-$IDADE = date_diff(date_create($NASC), date_create($hoje));
+$IDADE = date_diff(date_create($NASC), date_create($DataAtual));
 
 if (empty($NOME)) {
     $dados = array(
@@ -15,12 +15,12 @@ if (empty($NOME)) {
     if ($IDADE->format('%y') >= 18) {
         $dados = array(
             "B4" => 'alert-success',
-            "mensagem" => 'Bem vindo, ' . $NOME . ', A sua bebida favorita é: ' . $BEBIDA
+            "mensagem" => 'Bem vindo meu caro ou minha cara ' . $NOME . ', A sua bebida favorita é: ' . $BEBIDA . ' e você tem ' .$IDADE. ' anos.'  
         );
     } else {
         $dados = array(
             "B4" => 'alert-danger',
-            "mensagem" => 'você não deveria estar aqui! ' . $NOME . ', você é de menor!'
+            "mensagem" => 'Seja bem vindo ' . $NOME . ', você tem ' .$IDADE. 'anos e não pode beber ainda, aliás, você gosta de ' .$BEBIDA
         );
     }
 
