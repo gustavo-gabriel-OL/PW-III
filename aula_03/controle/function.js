@@ -25,6 +25,7 @@ $(document).ready(function () {
                                     ${dados.mensagem}
                                 </h1>
                             </div>
+                            <img src="../../img2/${dados.tipo}" class="img-fluid">
                         </div>
                     </div>               
             `);

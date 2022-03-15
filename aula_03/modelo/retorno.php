@@ -14,13 +14,15 @@ if (empty($NOME)) {
 
     if ($IDADE->format('%y') >= 18) {
         $dados = array(
-            "B4" => 'alert-success',
-            "mensagem" => 'Bem vindo meu caro ou minha cara ' . $NOME . ', A sua bebida favorita é: ' . $BEBIDA . ' e você tem ' .$IDADE. ' anos.'  
+            "tipo" => 'maior.jpg',
+            "B4" => 'alert-warning',
+            "mensagem" => 'Bem vindo meu caro ' . $NOME . ', A sua bebida favorita é ' . $BEBIDA . ' e você é maior de idade, você pode encher a cara meu amigo!'  
         );
     } else {
         $dados = array(
-            "B4" => 'alert-danger',
-            "mensagem" => 'Seja bem vindo ' . $NOME . ', você tem ' .$IDADE. 'anos e não pode beber ainda, aliás, você gosta de ' .$BEBIDA
+            "tipo" => 'menor.jpg',
+            "B4" => 'alert-warning',
+            "mensagem" => 'Bem vindo meu caro ' . $NOME . ', A sua bebida favorita é: ' . $BEBIDA . ' e você é menor de idade, é melhor você sair daqui, antes que eu ligue para a polícia!'
         );
     }
 
