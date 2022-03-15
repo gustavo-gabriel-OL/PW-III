@@ -8,9 +8,20 @@ $IDADE = date_diff(date_create($NASC), date_create($DataAtual));
 
 if (empty($NOME)) {
     $dados = array(
+        "tipo" => 'nao.png',
         "mensagem" => 'Existe(m) campo(s) a ser(em) preenchido(s).'
     );
-} else {
+} else if(empty($BEBIDA)){
+    $dados = array(
+        "tipo" => 'nao.png',
+        "mensagem" => 'Existe(m) campo(s) a ser(em) preenchido(s).'
+    );
+}else if(empty($NASC)){
+    $dados = array(
+        "tipo" => 'nao.png',
+        "mensagem" => 'Existe(m) campo(s) a ser(em) preenchido(s).'
+    );
+}else {
 
     if ($IDADE->format('%y') >= 18) {
         $dados = array(
