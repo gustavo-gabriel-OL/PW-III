@@ -27,13 +27,13 @@ if (empty($NOME)) {
         $dados = array(
             "tipo" => 'maior.jpg',
             "B4" => 'alert-warning',
-            "mensagem" => 'Bem vindo meu caro ' . $NOME . ', A sua bebida favorita é ' . $BEBIDA . ' e você é maior de idade, você pode encher a cara meu amigo!'  
+            "mensagem" => 'Bem vindo meu caro ou minha cara ' . $NOME . ', A sua bebida favorita é ' . $BEBIDA . ' e você é maior de idade, você pode encher a cara meu amigo ou minha amiga!'  
         );
     } else {
         $dados = array(
             "tipo" => 'menor.jpg',
             "B4" => 'alert-warning',
-            "mensagem" => 'Bem vindo meu caro ' . $NOME . ', A sua bebida favorita é: ' . $BEBIDA . ' e você é menor de idade, é melhor você sair daqui, antes que eu ligue para a polícia!'
+            "mensagem" => 'Bem vindo meu caro ou minha cara ' . $NOME . ', A sua bebida favorita é: ' . $BEBIDA . ' e você é menor de idade, é melhor você sair daqui, antes que eu ligue para a polícia!'
         );
     }
 
